@@ -7,7 +7,6 @@ new Vue({
         reponse: '',
         question: 'Question',
         msgValider: 'Valider',
-        count: 30,
         questionsEtReponses: [
             {
                 question: 'Question',
@@ -197,10 +196,10 @@ new Vue({
 let counter = {};
 window.addEventListener("load", function () {
     //COUNTDOWN IN SECONDS
-    counter.end = 300;
+    counter.end = 31;
 
     //Mon container
-    counter = document.getElementById("compteur-numero");
+    counter.div = document.getElementById("compteur-numero");
 
     //Start if no past end date
     if (counter.end > 0) {
@@ -216,7 +215,7 @@ window.addEventListener("load", function () {
             let count = counter.end;
 
             //Update HTML
-            counter.count.innerHTML = count;
+            counter.div.innerHTML = counter.end;
         }, 1000);
     }
 })
