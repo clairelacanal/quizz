@@ -1,0 +1,24 @@
+body {
+    background-color: #130f40;
+}
+
+#titreCouverture {
+    color: #fff200;
+    font-family: 'Ultra', serif;
+    font-size: 80px;
+    margin-top: 33%;
+}
+
+#buttonCouverture {
+    background-color: #fff200;
+    font-family: 'Ultra', serif;
+    color:  #130f40;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 500px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3%;
+    border: #fff200;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}

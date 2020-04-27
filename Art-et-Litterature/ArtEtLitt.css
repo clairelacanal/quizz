@@ -1,0 +1,124 @@
+body {
+    background-color: #130f40;
+}
+
+#mainTitre {
+    color: #fff200;
+    font-family: 'Ultra', serif;
+    font-size: 80px;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #fffa65;
+    margin-top: 40px;
+}
+
+#themes {
+    background-color:#273c75;
+    margin-top: 40px;
+    width: 400px;
+    height: 600px;
+    border-radius: 1%;
+}
+
+.art {
+    background-color:  #ff7979;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 2%;
+   
+}
+
+.art h4 {
+    color: black;
+    margin-top: 5px;
+}
+
+#question {
+    width: 10px;
+    height: 100px;
+    background-color:#ecf0f1;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 3%;
+    text-align: left;
+}
+
+#question p {
+    margin-top: 30px;
+    font-weight: none;
+    color:  black ;
+}
+
+#reponse {
+    width: 10px;
+    height: 300px;
+    background-color:#ecf0f1;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 3%;
+    text-align: left; 
+}
+
+#reponse p {
+    margin-top: 10px;
+    font-weight: none;
+    color: black;
+}
+
+#buttonSuivantSubmit {
+    margin-top: 30px;
+    background-color: #ff7979;
+    font-family: 'Ultra', serif;
+    color:  #130f40;
+    font-weight: bold;
+    margin-right: 350px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3%;
+    border:  #ff7979;
+    box-shadow: 2px 2px #ffb8b8;
+}
+
+#buttonSubmitValider{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#buttonValider {
+    background-color: #ffcccc;
+    border: #ffcccc;
+    border-radius: 3%;
+    box-shadow: 2px 2px #ffb8b8;
+    font-family: 'Ultra', serif;
+    color: black;
+    font-weight: bold;
+
+}
+
+#reponseFinale {
+    display: block;
+    margin-left: 180px;
+}
+
+.chrono {
+    width: 150px;
+    height: 150px;
+    background-color:#273c75;
+    margin-top: 0px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border:  #ff7979 20px solid;
+  
+}
+
+#compteur-numero {
+    color: black;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 40px;
+}
