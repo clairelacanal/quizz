@@ -187,6 +187,28 @@ new Vue({
 
             }
 
+        },
+
+        clickButtonValider: function () {
+            const buttonTransforme = document.getElementById("buttonValider");
+            buttonTransforme.disabled = true;
+            this.msgValider = 'Validé';
+            document.getElementById("buttonValider").style.backgroundColor = '#bdc3c7';
+            document.getElementById("buttonValider").style.color = '#2c3e50';
+            document.getElementById("buttonValider").style.fontWeight = 'bold';
+            document.getElementById("buttonValider").style.boxShadow = '2px 2px #2c3e50';
+            clearInterval(counter.ticker);
+            this.clickReponseFinale();
+        },
+
+        clickReponseFinale: function () {
+          let reponses = document.getElementsByClassName("reponseCaseRadio");
+          for(let i = 0; i < reponses.length; i++){
+                reponses[i].disabled = true;
+                console.log(reponses[i]);
+              
+          }
+          
         }
 
     }
@@ -196,7 +218,7 @@ new Vue({
 let counter = {};
 window.addEventListener("load", function () {
     //COUNTDOWN IN SECONDS
-    counter.end = 31;
+    counter.end = 21;
 
     //Mon container
     counter.div = document.getElementById("compteur-numero");
@@ -208,7 +230,9 @@ window.addEventListener("load", function () {
             counter.end--;
             if (counter.end <= 0) {
                 clearInterval(counter.ticker);
-                counter.end = 0;
+                counter.end = "Perdu";
+                document.getElementById("compteur-numero").style.color = '#e74c3c';
+                document.getElementById("compteur-numero").style.fontSize = '30px';
             }
 
             //Calculate remaining time
@@ -219,4 +243,5 @@ window.addEventListener("load", function () {
         }, 1000);
     }
 })
+
 
